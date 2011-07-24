@@ -30,15 +30,19 @@ Here's a breakdown of the folders:
 * LCD_Thermostat_V1
   My first try at the thermostat codebase.  At this point I had the LCD working, 
   a photoresister for auto-dimming and the thermistors for temperature input.
+  
 * LCD_Thermostat_V2
   For V2, I prototyped all the temperature averaging and adjusting code as well
   as the relay control code.  This is very messy and I never used it in production.
+
 * LCD_Thermostat_V3
   This is the version I am using.  It is fully functional and has been running since
   January 2011.  I noticed that it did freeze and the heat was stuck on once in 6
   months.  I attibuted this to a very poor source of regulated power.
+  
 * thermistor
   A thermistor diagnostics sketch
+  
 * Thermostat_RelayBoard
   The code that I used to diagnose / stress test my relay board that is used to switch 
   the Heat, AC and Fan power.
