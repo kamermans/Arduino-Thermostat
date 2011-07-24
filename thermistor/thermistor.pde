@@ -1,3 +1,5 @@
+// I got most of this code from somewhere else, not sure anymore
+
 #include <math.h>
 //Schematic:
 // [Ground] ---- [10k-Resister] -------|------- [Thermistor] ---- [+5v]

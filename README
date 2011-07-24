@@ -1,0 +1,46 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is the Arduino Powered Thermostat
+ *
+ * The Initial Developer of the Original Code is Steve Kamerman.
+ * Portions created by the Initial Developer are Copyright (C) 2011
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *
+ * ***** END LICENSE BLOCK ***** */
+ 
+First and most importantly, you should not attempt to modify your existing thermostat or build one as shown here unless you are qualified to do so.  There is a real risk of electrocution, fire or damage to your Heat/AC unit, even if you follow these guidelines perfectly.
+
+This repo is basically a straight dump of my codebase.  I wrote this between 10/2010 and 1/2011 and have been using the LCD_Thermostat_V3 code for my thermostat at my house for several months.
+
+Here's a breakdown of the folders:
+
+* LCD_Thermostat_V1
+  My first try at the thermostat codebase.  At this point I had the LCD working, 
+  a photoresister for auto-dimming and the thermistors for temperature input.
+* LCD_Thermostat_V2
+  For V2, I prototyped all the temperature averaging and adjusting code as well
+  as the relay control code.  This is very messy and I never used it in production.
+* LCD_Thermostat_V3
+  This is the version I am using.  It is fully functional and has been running since
+  January 2011.  I noticed that it did freeze and the heat was stuck on once in 6
+  months.  I attibuted this to a very poor source of regulated power.
+* thermistor
+  A thermistor diagnostics sketch
+* Thermostat_RelayBoard
+  The code that I used to diagnose / stress test my relay board that is used to switch 
+  the Heat, AC and Fan power.
+  
+*** I am working on getting some diagrams, pictures and videos ***
